@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    background: black;
+    font-family: Arial, sans-serif;
+}
+
+#gameCanvas {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+}
+
+#hud {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    color: white;
+    font-size: 20px;
+    line-height: 1.8;
+    background: rgba(0, 0, 0, 0.45);
+    padding: 12px 18px;
+    border-radius: 10px;
+    z-index: 10;
+}
+
+#crosshair {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    z-index: 10;
+    pointer-events: none;
+}
+
+#instructions,
+#gameOver {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(10, 10, 20, 0.94);
+    color: white;
+    padding: 35px;
+    width: 360px;
+    text-align: center;
+    border-radius: 18px;
+    z-index: 20;
+    box-shadow: 0 0 30px rgba(0, 200, 255, 0.5);
+}
+
+#instructions h2 {
+    margin-bottom: 20px;
+}
+
+#instructions p {
+    margin: 8px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    background: #00aaff;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0088cc;
+}
+
+#gameOver {
+    display: none;
+}
+
+#gameOver h1 {
+    margin-bottom: 15px;
+}
