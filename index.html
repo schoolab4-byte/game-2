@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Arena Shooter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <canvas id="gameCanvas"></canvas>
+
+    <div id="hud">
+        <div>🏆 Score: <span id="score">0</span></div>
+        <div>🛡️ Shield: <span id="health">100</span></div>
+        <div>🤖 Targets: <span id="targets">0</span></div>
+    </div>
+
+    <div id="crosshair">+</div>
+
+    <div id="instructions">
+        <h2>3D ARENA SHOOTER</h2>
+        <p>W A S D — Move</p>
+        <p>Mouse — Look</p>
+        <p>Click — Fire Energy Pulse</p>
+        <p>ESC — Release Mouse</p>
+        <button id="startButton">START GAME</button>
+    </div>
+
+    <div id="gameOver">
+        <h1>GAME OVER</h1>
+        <p>Your Score: <span id="finalScore">0</span></p>
+        <button onclick="location.reload()">PLAY AGAIN</button>
+    </div>
+
+    <script src="https://cdn.babylonjs.com/babylon.js"></script>
+    <script src="game.js"></script>
+
+</body>
+</html>
